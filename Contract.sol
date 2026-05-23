@@ -3,7 +3,7 @@ pragma solidity ^0.8.20;
 
 contract BaseContract {
     string public name = "";
-    uint256 public commitCount = 5;
+    uint256 public commitCount = 6;
     uint256 public lastUpdated = block.timestamp;
 
     event ContractUpdated(uint256 commitCount);
