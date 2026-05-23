@@ -3,12 +3,12 @@ pragma solidity ^0.8.20;
 
 contract BaseContract {
     string public name = "";
-    uint256 public version = 1;
-    uint256 public updatedAt = block.timestamp;
+    uint256 public commitCount = 1;
+    uint256 public lastUpdated = block.timestamp;
 
-    event Updated(uint256 version);
+    event ContractUpdated(uint256 commitCount);
 
     constructor() {
-        emit Updated(version);
+        emit ContractUpdated(commitCount);
     }
 }
